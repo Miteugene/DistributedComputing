@@ -1,0 +1,4 @@
+pi.exe 0 1000 out1.txt
+pi.exe 1000 1000 out2.txt
+1.bat
+2.bat
