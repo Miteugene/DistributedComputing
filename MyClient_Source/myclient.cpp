@@ -73,7 +73,7 @@ MyClient::~MyClient()
 void MyClient::slotReadyRead()
 {
     QDataStream in(m_pTcpSocket);
-    in.setVersion(QDataStream::Qt_4_5);
+    in.setVersion(QDataStream::Qt_5_10);
     for (;;) {
         if (!m_nNextBlockSize) {
             if (m_pTcpSocket->bytesAvailable() < sizeof(quint16)) {

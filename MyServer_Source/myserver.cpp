@@ -241,7 +241,7 @@ void MyServer::sendToClient(QTcpSocket* pSocket, const QString& str)
 {
     QByteArray  arrBlock;
     QDataStream out(&arrBlock, QIODevice::WriteOnly);
-    out.setVersion(QDataStream::Qt_4_5);
+    out.setVersion(QDataStream::Qt_5_10);
     out << quint16(0) << QTime::currentTime() << str;
 
     out.device()->seek(0);
